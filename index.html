@@ -67,7 +67,9 @@
           <h1 class="main-board-text">
             Эффективные решения для вашего бизнеса
           </h1>
-          <button class="primery-button" type="button">Заказать услугу</button>
+          <button class="primery-button" type="button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
 
@@ -134,34 +136,40 @@
           <h2 class="about-us-tittle">Чем мы занимаемся</h2>
           <ul class="about-us-list list">
             <li class="item">
-              <a href="#"
+              <a href="#" class="about-us-thumb"
                 ><img
                   src="images/man-tipping-on-ipad.jpg"
                   alt="человек печатает на клавиатуре ай-пада"
                   width="370"
                   height="294"
                   class="about-us-img"
-              /></a>
+                />
+                <p class="about-us-overlay">Десктопные приложения</p>
+              </a>
             </li>
             <li class="item">
-              <a href="#"
+              <a href="#" class="about-us-thumb"
                 ><img
                   src="images/lapto-and-phone.jpg"
                   alt="человек держит телефон на фоне ноутбука"
                   width="370"
                   height="294"
                   class="about-us-img"
-              /></a>
+                />
+                <p class="about-us-overlay">Мобильные приложения</p></a
+              >
             </li>
             <li class="item">
-              <a href="#"
+              <a href="#" class="about-us-thumb"
                 ><img
                   src="images/hand-holding-ipad.jpg"
                   alt="человек держит айпад на котором выбирает при помощи стилуса цвет с палитры цветов"
                   width="370"
                   height="294"
                   class="about-us-img"
-              /></a>
+                />
+                <p class="about-us-overlay">Дизайнерские решения</p>
+              </a>
             </li>
           </ul>
         </div>
@@ -471,5 +479,16 @@
         </div>
       </div>
     </footer>
+
+    <div class="back-drop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-button" data-modal-close>
+          <svg class="close-icon" width="18" height="18">
+            <use hfer="./images/symbol-defs.svg#close-icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
